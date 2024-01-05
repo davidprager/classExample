@@ -20,30 +20,30 @@ use class;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `class`
+-- Table structure for table `student`
 --
 
-DROP TABLE IF EXISTS `class`;
+DROP TABLE IF EXISTS `student`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `class` (
-  `personId` int NOT NULL,
-  `name` varchar(45) NOT NULL,
-  `age` varchar(45) DEFAULT NULL,
-  `gender` varchar(45) DEFAULT NULL,
-  `height` float DEFAULT NULL,
-  `weight` float DEFAULT NULL,
-  PRIMARY KEY (`personId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `student` (
+  `studentId` int NOT NULL AUTO_INCREMENT,
+  `studentName` varchar(45) NOT NULL,
+  `studentAge` float DEFAULT NULL,
+  `studentGender` char(1) DEFAULT NULL,
+  `studentHeight` float DEFAULT NULL,
+  `studentWeight` float DEFAULT NULL,
+  PRIMARY KEY (`studentId`)
+) ENGINE=InnoDB AUTO_INCREMENT=21164 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `class`
+-- Dumping data for table `student`
 --
 
-LOCK TABLES `class` WRITE;
-/*!40000 ALTER TABLE `class` DISABLE KEYS */;
-/*!40000 ALTER TABLE `class` ENABLE KEYS */;
+LOCK TABLES `student` WRITE;
+/*!40000 ALTER TABLE `student` DISABLE KEYS */;
+/*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -55,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-05 12:56:43
+-- Dump completed on 2024-01-05 16:33:51
